@@ -1,20 +1,8 @@
-<!-- ## 前言
+## 前言
 
 随着vue3的转正，很多基于vue2写的工具面临着更新，vuepress为其中之一，vuepress-next官方显示当前状态为beta状态。
 
 最近刚好有搭建个人blog的想法，于是就开始学习一下。
-
-
-## 主要内容
-
-内容主要包括以下几个方面：
-快速搭建
-部署到github pages
-	先了解一下github action
-	申请域名，添加dns记录
-	自定义域名的安全性
-博客定制化
-	子主题 1
 
 
 
@@ -137,10 +125,65 @@ jobs:
 截图。。。
 
 5. 打开`<USERNAME>.github.io` 即可看到部署的网站
-
 截图。。。
 
 
-## 博客定制化
+## 定制化
 
- -->
+### 配置说明
+
+vuepress的配置形式：
+1. config.ts，通常为网站范围的配置
+2. frontmatter，通常为页面级的配置，包含主页和普通页面的配置
+
+以下使用default theme 来说明下具体配置
+
+
+### 配置网站基本信息
+
+网站范围配置，这里使用config.ts进行，配置项由base，lang，title，description，head 等，具体说明可以查看[官网](https://v2.vuepress.vuejs.org/reference/config.html)
+
+配置截图
+
+
+### 配置首页内容
+
+页面范围配置，使用frontmatter进行配置，配置项有home,heroImage，tagline，actions，features，footer等，具体说明可以查看[官网](https://v2.vuepress.vuejs.org/reference/default-theme/frontmatter.html#home-page)
+
+
+配置截图
+
+
+### 配置导航栏、侧边栏内容
+
+1. 配置导航栏，配置项navbar由default theme 提供，具体可以查看[官网](https://v2.vuepress.vuejs.org/reference/default-theme/config.html#navbar)
+举例说明，比如添加导航内容，前端导航，下拉包含vue、react子项，该如何配置
+配置截图
+效果截图
+
+2. 配置侧边栏，配置项sidebar由default theme 提供，具体可以查看[官网](https://v2.vuepress.vuejs.org/reference/default-theme/config.html#sidebar)
+配置截图
+效果截图
+
+### 页面内容
+
+1. 使用图片，推荐使用相对路径
+截图
+
+2. 使用组件
+
+
+
+## 内容总结
+
+以上主要是Vuepress基本使用的内容，使用默认主题default theme进行搭建。
+
+主要包含一下三方面内容：
+- 博客搭建
+- Github Pages部署
+- 定制化
+
+其中定制化包含：
+- 配置网站信息，首页内容，导航栏，侧边栏等内容
+- 页面内容如何使用图片、组件等
+
