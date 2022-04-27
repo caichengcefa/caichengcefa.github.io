@@ -159,11 +159,15 @@ vuepress的配置形式：
 
 1. 配置导航栏，配置项navbar由default theme 提供，具体可以查看[官网](https://v2.vuepress.vuejs.org/reference/default-theme/config.html#navbar)
 举例说明，比如添加导航内容，前端导航，下拉包含vue、react子项，该如何配置
+
 配置截图
+
 效果截图
 
 2. 配置侧边栏，配置项sidebar由default theme 提供，具体可以查看[官网](https://v2.vuepress.vuejs.org/reference/default-theme/config.html#sidebar)
+
 配置截图
+
 效果截图
 
 ### 页面内容
@@ -178,7 +182,7 @@ vuepress的配置形式：
 
 ## 内容总结
 
-以上主要是Vuepress基本使用的内容，使用默认主题default theme进行搭建。
+以上是Vuepress基本使用的内容，使用默认主题default theme进行搭建。
 
 主要包含一下三方面内容：
 - 博客搭建
