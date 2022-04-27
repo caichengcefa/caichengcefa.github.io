@@ -110,15 +110,14 @@ export default defineUserConfig({
   theme: defaultTheme({
     // logo: "/images/hero.png",
 
-    repo: "https://caichengcefa.github.io/",
+    repo: "https://github.com/caichengcefa/caichengcefa.github.io",
     repoLabel: "Github",
 
     locales: {
       "/": {
         navbar: navbar,
         sidebar: sidebar,
-        // // page meta
-        // editLinkText: "Edit this page on GitHub",
+        editLinkText: "Edit this page on GitHub",
       },
     },
   }),
