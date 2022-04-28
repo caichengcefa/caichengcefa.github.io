@@ -1,0 +1,1 @@
+const t={key:"v-e50aec3a",path:"/html/html.html",title:"Hello HTML",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1651051727e3,contributors:[{name:"caichengcefa",email:"yaozf@utek.com",commits:1}]},filePathRelative:"html/html.md"};export{t as data};

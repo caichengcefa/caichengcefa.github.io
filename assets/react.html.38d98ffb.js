@@ -1,0 +1,1 @@
+const e={key:"v-ca9e7b7a",path:"/react/react.html",title:"Hello React",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1651051727e3,contributors:[{name:"caichengcefa",email:"yaozf@utek.com",commits:1}]},filePathRelative:"react/react.md"};export{e as data};

@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as r,a as t,b as o}from"./app.9b673b3b.js";const s={},c={id:"hello-array",tabindex:"-1"},_=t("a",{class:"header-anchor",href:"#hello-array","aria-hidden":"true"},"#",-1),n=o(" Hello Array"),d=[_,n];function h(l,i){return a(),r("h1",c,d)}var m=e(s,[["render",h],["__file","array.html.vue"]]);export{m as default};

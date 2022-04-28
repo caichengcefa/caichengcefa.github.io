@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a,a as c,b as o}from"./app.9b673b3b.js";const r={},s={id:"hello-react",tabindex:"-1"},_=c("a",{class:"header-anchor",href:"#hello-react","aria-hidden":"true"},"#",-1),n=o(" Hello React"),d=[_,n];function h(l,i){return t(),a("h1",s,d)}var m=e(r,[["render",h],["__file","react.html.vue"]]);export{m as default};

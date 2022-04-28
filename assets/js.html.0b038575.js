@@ -1,0 +1,1 @@
+const e={key:"v-51df5a23",path:"/js/js.html",title:"Hello Javascript",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1651051727e3,contributors:[{name:"caichengcefa",email:"yaozf@utek.com",commits:1}]},filePathRelative:"js/js.md"};export{e as data};

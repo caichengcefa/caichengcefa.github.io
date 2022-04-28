@@ -1,0 +1,1 @@
+import{_ as e,o as s,c as t,a as o,b as a}from"./app.9b673b3b.js";const c={},n={id:"hello-nestjs",tabindex:"-1"},_=o("a",{class:"header-anchor",href:"#hello-nestjs","aria-hidden":"true"},"#",-1),r=a(" Hello Nestjs"),d=[_,r];function h(l,i){return s(),t("h1",n,d)}var m=e(c,[["render",h],["__file","nestjs.html.vue"]]);export{m as default};

@@ -1,0 +1,1 @@
+const a={key:"v-623b278e",path:"/algorithm/array.html",title:"Hello Array",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1651051727e3,contributors:[{name:"caichengcefa",email:"yaozf@utek.com",commits:1}]},filePathRelative:"algorithm/array.md"};export{a as data};
