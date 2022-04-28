@@ -1,3 +1,5 @@
+# Vuepress
+
 ## 前言
 
 随着vue3的转正，很多基于vue2写的工具面临着更新，vuepress为其中之一，vuepress-next官方显示当前状态为beta状态。
@@ -47,9 +49,7 @@ node_modules
 6. 运行脚本命令
 yarn docs:dev
 
-
-启动截图。。。
-
+![](./images/Pasted%20image%2020220428095700.png)
 
 ## Github Pages部署
 
@@ -122,11 +122,11 @@ jobs:
 
 4. 在项目Settings-> Pages -> Source 设置GitHub Pages 对应的分支gh-pages
 
-截图。。。
+![](./images/Pasted%20image%2020220428101713.png)
 
 5. 打开`<USERNAME>.github.io` 即可看到部署的网站
 
-截图。。。
+![](./images/Pasted%20image%2020220428095700.png)
 
 
 ## 定制化
@@ -144,37 +144,124 @@ vuepress的配置形式：
 
 网站范围配置，这里使用config.ts进行，配置项由base，lang，title，description，head 等，具体说明可以查看[官网](https://v2.vuepress.vuejs.org/reference/config.html)
 
-配置截图
+```ts
+import { defineUserConfig } from "@vuepress/cli";
+export default defineUserConfig({
+  base: "/",
+  title: "caichengcefa博客",
+  description: "关于前端技术栈的分享",
+});
+```
 
 
 ### 配置首页内容
 
 页面范围配置，使用frontmatter进行配置，配置项有home,heroImage，tagline，actions，features，footer等，具体说明可以查看[官网](https://v2.vuepress.vuejs.org/reference/default-theme/frontmatter.html#home-page)
 
+```ts
+---
+home: true
+heroText: caichengcefa博客
+tagline: 关于前端技术栈的分享
+actions:
+  - text: 浏览
+    link: /vue/vue.md
+    type: primary
+---
+```
 
-配置截图
-
+![](./images/Snipaste_2022-04-28_11-22-50.png)
 
 ### 配置导航栏、侧边栏内容
 
 1. 配置导航栏，配置项navbar由default theme 提供，具体可以查看[官网](https://v2.vuepress.vuejs.org/reference/default-theme/config.html#navbar)
 举例说明，比如添加导航内容，前端导航，下拉包含vue、react子项，该如何配置
-配置截图
-效果截图
 
-2. 配置侧边栏，配置项sidebar由default theme 提供，具体可以查看[官网](https://v2.vuepress.vuejs.org/reference/default-theme/config.html#sidebar)
-配置截图
-效果截图
+```ts
+import { defineUserConfig } from "@vuepress/cli";
+import { defaultTheme } from "@vuepress/theme-default";
+export default defineUserConfig({
+  ...
+  theme: defaultTheme({
+    navbar: [
+      {
+        text: "前端",
+        children: [
+          {
+            text: "Vue",
+            children: ["/vue/vue.md"],
+          },
+          {
+            text: "React",
+            children: ["/react/react.md"],
+          },
+        ],
+      },
+      {
+        text: "后端",
+        children: [
+          {
+            text: "Nodejs",
+            children: ["/nodejs/nodejs.md"],
+          },
+        ],
+      },
+      ...
+    ],
+  }),
+});
+
+```
+![](./images/Pasted%20image%2020220428103458.png)
+
+1. 配置侧边栏，配置项sidebar由default theme 提供，具体可以查看[官网](https://v2.vuepress.vuejs.org/reference/default-theme/config.html#sidebar)
+
+```ts
+import { defineUserConfig } from "@vuepress/cli";
+import { defaultTheme } from "@vuepress/theme-default";
+export default defineUserConfig({
+  ...
+  theme: defaultTheme({
+	...
+    sidebar: {
+      "/vue/": [
+        {
+          text: "Vue",
+          children: ["/vue/vue.md"],
+        },
+      ],
+      "/react/": [
+        {
+          text: "React",
+          children: ["/react/react.md"],
+        },
+      ],
+    },
+    ...
+  }),
+});
+
+```
+![](./images/Pasted%20image%2020220428104122.png)
 
 ### 页面内容
 
 1. 使用图片，推荐使用相对路径
 
-截图
+```ts
+# Hello Vue
+
+![图片](./Snipaste_2022-04-28_10-43-32.png)
+
+```
+![](./images/Pasted%20image%2020220428104511.png)
 
 2. 使用组件
 
-
+```ts
+<CountComponent></CountComponent>
+```
+<CountComponent></CountComponent>
 
 ## 内容总结
 

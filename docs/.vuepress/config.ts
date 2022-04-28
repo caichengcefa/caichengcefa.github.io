@@ -100,6 +100,7 @@ const sidebar: SidebarConfig = {
       children: ["/algorithm/动态规划.md"],
     },
   ],
+  "/tool/": ["/tool/vuepress.md"],
 };
 
 export default defineUserConfig({
@@ -112,6 +113,7 @@ export default defineUserConfig({
     repo: "https://github.com/caichengcefa/caichengcefa.github.io",
     repoLabel: "Github",
 
+    sidebarDepth: 2,
     navbar: navbar,
     sidebar: sidebar,
 
