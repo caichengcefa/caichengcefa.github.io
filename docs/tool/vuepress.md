@@ -258,10 +258,44 @@ export default defineUserConfig({
 
 2. 使用组件
 
+配置组件注册
+```ts
+import { path } from "@vuepress/utils";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
+
+plugins: [
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, "./components"),
+    }),
+]
+
+```
+
+定义组件
+```ts
+<template>
+  <div @click="handleClick">It's {{ count }}</div>
+</template>
+
+<script lang="ts" setup>
+import { ref } from "vue";
+const count = ref(0);
+const handleClick = () => {
+  count.value += 1;
+};
+</script>
+
+<style></style>
+
+```
+
+使用组件
 ```ts
 <CountComponent></CountComponent>
 ```
-<CountComponent></CountComponent>
+
+<!-- <CountComponent></CountComponent> -->
+
 
 ## 内容总结
 
