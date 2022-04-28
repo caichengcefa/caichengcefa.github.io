@@ -1,0 +1,1 @@
+const t={key:"v-3c967b88",path:"/algorithm/linklist.html",title:"Hello Linklist",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1651051727e3,contributors:[{name:"caichengcefa",email:"yaozf@utek.com",commits:1}]},filePathRelative:"algorithm/linklist.md"};export{t as data};

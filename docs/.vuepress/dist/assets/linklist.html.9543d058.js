@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s,a as o,b as l}from"./app.96c291df.js";const a={},i={id:"hello-linklist",tabindex:"-1"},n=o("a",{class:"header-anchor",href:"#hello-linklist","aria-hidden":"true"},"#",-1),c=l(" Hello Linklist"),_=[n,c];function r(d,h){return t(),s("h1",i,_)}var k=e(a,[["render",r],["__file","linklist.html.vue"]]);export{k as default};

@@ -49,7 +49,7 @@ node_modules
 6. 运行脚本命令
 yarn docs:dev
 
-![](./images/Pasted%20image%2020220428095700.png)
+![](./images/20220428095700.png)
 
 ## Github Pages部署
 
@@ -122,11 +122,11 @@ jobs:
 
 4. 在项目Settings-> Pages -> Source 设置GitHub Pages 对应的分支gh-pages
 
-![](./images/Pasted%20image%2020220428101713.png)
+![](./images/20220428101713.png)
 
 5. 打开`<USERNAME>.github.io` 即可看到部署的网站
 
-![](./images/Pasted%20image%2020220428095700.png)
+![](./images/20220428095700.png)
 
 
 ## 定制化
@@ -212,7 +212,7 @@ export default defineUserConfig({
 });
 
 ```
-![](./images/Pasted%20image%2020220428103458.png)
+![](./images/20220428103458.png)
 
 1. 配置侧边栏，配置项sidebar由default theme 提供，具体可以查看[官网](https://v2.vuepress.vuejs.org/reference/default-theme/config.html#sidebar)
 
@@ -242,7 +242,7 @@ export default defineUserConfig({
 });
 
 ```
-![](./images/Pasted%20image%2020220428104122.png)
+![](./images/20220428104122.png)
 
 ### 页面内容
 
@@ -254,7 +254,7 @@ export default defineUserConfig({
 ![图片](./Snipaste_2022-04-28_10-43-32.png)
 
 ```
-![](./images/Pasted%20image%2020220428104511.png)
+![](./images/20220428104511.png)
 
 2. 使用组件
 
