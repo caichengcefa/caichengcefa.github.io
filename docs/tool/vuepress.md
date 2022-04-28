@@ -265,7 +265,7 @@ export default defineUserConfig({
 
 ## 内容总结
 
-以上主要是Vuepress基本使用的内容，使用默认主题default theme进行搭建。
+以上是Vuepress基本使用的内容，使用默认主题default theme进行搭建。
 
 主要包含一下三方面内容：
 - 博客搭建
